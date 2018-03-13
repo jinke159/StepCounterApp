@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="基本设置">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="start_service"
+            android:summaryOff="@string/close"
+            android:summaryOn="@string/open"
+            android:title="@string/start_step_service"/>
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="start_service"
+            android:key="boot_start"
+            android:summaryOn="@string/boot_start_summary"
+            android:summaryOff="@string/no_boot_start_summary"
+            android:title="@string/boot_start"/>
+        <EditTextPreference
+            android:key="save_frequency"
+            android:dialogMessage="最小值为15分钟，最大值为720分钟，默认120分钟。"
+            android:defaultValue="120"
+            android:maxLength="3"
+            android:inputType="number"
+            android:title="@string/save_frequency"/>
+        <Preference android:title="APP介绍" >
+            <intent android:targetClass="com.jk.stepcounter.SynopsisActivity"
+                    android:targetPackage="com.jk.stepcounter"/>
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

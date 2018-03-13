@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">轻量计步器</string>
+    <string name="save_time">%2$d小时保存一次步数</string>
+    <string name="save_frequency">保存间隔（单位：分钟）</string>
+    <string name="boot_start">开机启动</string>
+    <string name="boot_start_summary">开机自动启动服务</string>
+    <string name="no_boot_start_summary">开机不自动启动服务</string>
+    <string name="start_step_service">开启计步服务</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+</resources>
